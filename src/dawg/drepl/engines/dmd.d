@@ -155,7 +155,7 @@ private:
         {
             dg();
         }
-        catch (Exception e)
+        catch (Throwable e)
         {
             success = false;
             stderr.writeln(e.toString());
