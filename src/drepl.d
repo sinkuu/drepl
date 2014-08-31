@@ -34,6 +34,7 @@ void main(string[] args)
         case success:
         case error:
             if (res.stdout.length) writeln(res.stdout);
+            if (res.stderr.length) writeln(res.stderr);
             prompt = "D> ";
             break;
         }
